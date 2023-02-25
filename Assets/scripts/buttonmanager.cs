@@ -33,6 +33,7 @@ public class buttonmanager : MonoBehaviour
             TextMeshProUGUI label = newObject.GetComponentInChildren<TextMeshProUGUI>();
             label.text = TaskName.text;
             Debug.Log("New Task: " + TaskName.text + " has been created");
+            TaskName.text = "";
             newTaskPanel.SetActive(false);
         } else if (buttonType == Button.newTask) {
             Debug.Log("New Task");
